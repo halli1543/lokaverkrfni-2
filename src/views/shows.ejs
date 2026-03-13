@@ -1,0 +1,10 @@
+<h1><&= title &></h1>
+
+<ul>
+    <& shows.forEach(show => { &>
+        <li>
+            <strong><&= show.title %></strong>
+            (<&= show.year &>) - <&= show.seasons &> seasons
+        </li>
+     <&  }) &>
+</ul>
