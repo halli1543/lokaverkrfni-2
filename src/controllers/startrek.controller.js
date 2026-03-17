@@ -14,4 +14,4 @@ exports.GetHomePage = (req, res) => {
 
 exports.GetShows = (req, res) => {
     res.render('shows', { title: 'Star Trek Shows', shows });
-}
+};
