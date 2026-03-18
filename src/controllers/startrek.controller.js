@@ -8,10 +8,10 @@ const shows = [
     { title: 'Strange New Worlds', year: '2022-present', seasons: 3},
 ];
 
-exports.GetHomePage = (req, res) => {
+exports.getHomePage = (req, res) => {
     res.render('index', { title: 'Welcome to Star Trek' });
 };
 
-exports.GetShows = (req, res) => {
+exports.getShows = (req, res) => {
     res.render('shows', { title: 'Star Trek Shows', shows });
 };
