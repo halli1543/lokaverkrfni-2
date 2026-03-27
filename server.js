@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 
 const startrekRouter = require('./src/routes/startrek.routes');
-const { title } = require('process');
 
 
 const app = express();
@@ -21,7 +20,7 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send('Something went wrong!');
+  res.status(500).send('Server error');
 });
 
 app.listen(PORT, () => {
